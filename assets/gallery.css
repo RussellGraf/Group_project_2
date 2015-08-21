@@ -1,0 +1,26 @@
+.itemwrapper {
+	float: left;
+	padding: 25px;
+	margin: 0;
+	width: 33.3%;
+	height: auto;
+	box-sizing: border-box;
+}
+
+.item {
+	margin: 0 auto;
+	overflow: hidden;
+	border: 1px solid black;
+	box-sizing: border-box;
+}
+
+.imagebox {
+	height:  200px;
+	width: 200px;
+	background-position: center center;
+	background-size: cover;
+}
+
+.imagebox:hover {
+	cursor: pointer;
+}
