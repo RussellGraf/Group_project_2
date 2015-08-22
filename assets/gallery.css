@@ -39,8 +39,6 @@
 	display: none;
 }
 
-showall
-
 		@media (max-width: 1051px) {
 
 			.imagebox {
@@ -65,13 +63,6 @@ showall
 			}
 		}
 
-		@media (max-width: 629px) {
-			
-			.imagebox {
-				height: 350px;
-				width: 350px;
-			}
-		}
 
 		@media (max-width: 629px) {
 			

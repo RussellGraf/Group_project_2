@@ -1,0 +1,174 @@
+/*HOME CSS*/
+
+#banner-container {
+	float: left;
+	width: 100%;
+	margin-top: 25px;
+}
+
+.banner-image {
+	width: 100%;
+	height: auto;
+	background-position: center center;
+}
+
+.overlaybanner {
+	background-color: #33526D;
+	opacity: 1.0;
+	height: 100%;
+}
+
+#banner-text-container-mobile {
+	float: left;
+	width: 100%;
+	display: none;
+}
+
+#banner-text-container-desktop-tablet {
+}
+
+.banner-text {
+	font-size: 100px;
+	position: absolute;
+	top: 105px;
+	margin-left: 200px;
+	color: white;
+	font-weight: 100;
+	width: 600px;
+	line-height: 85px;
+}
+
+.h1-bold {
+	font-weight: 300;
+}
+
+.rightcolwrapper {
+	float: left;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	background-color: white;
+	padding-left: 3.5%;
+	margin-bottom: 40px;
+}
+
+.marginleft {
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+.marginbottom {
+  margin-bottom: 50px;
+}
+
+.margintop {
+  margin-top: 10px
+}
+
+.about-col {
+	float: left;
+	width: 50%;
+	padding: 30px;
+	height: auto;
+/*	border-right: 4px solid #48C2AC;*/
+	box-sizing: border-box;
+}
+
+.contact-col {
+	float: left;
+	width: 50%;
+	padding: 5px 30px;
+	height: auto;
+	box-sizing: border-box;
+}
+
+.team-member-container {
+	float: left;
+	overflow: hidden;
+	box-sizing: border-box;
+	margin: 10px;
+}
+
+.team-member {
+	height: 250px;
+	width: 250px;
+	background-position: center center;
+	background-size: cover;
+}
+
+
+#map {
+	width: 100%;
+	height: 450px;
+}
+
+
+		@media (max-width: 900px) {
+
+			.banner-text {
+				font-size: 80px;
+				position: absolute;
+				top: 105px;
+				margin-left: 180px;
+				color: white;
+				font-weight: 100;
+				width: 600px;
+				line-height: 70px;
+			}
+		}
+
+		@media (max-width: 777px) {
+
+			.banner-text {
+				font-size: 75px;
+				position: absolute;
+				top: 105px;
+				margin-left: 140px;
+				color: white;
+				font-weight: 100;
+				width: 400px;
+				line-height: 65px;
+			}
+		}
+
+		@media (max-width: 665px) {
+
+			.banner-text {
+				font-size: 60px;
+				position: absolute;
+				top: 105px;
+				margin-left: 100px;
+				color: white;
+				font-weight: 100;
+				width: 400px;
+				line-height: 55px;
+			}
+
+			.about-col {
+				width: 100%;
+			}
+
+			.contact-col {
+				width: 100%;
+			}
+		}
+
+		@media (max-width: 603px) {
+
+			#banner-text-desktop-tablet {
+				display: none;
+			}
+
+			#banner-text-container-mobile {
+				display: block;
+			}
+
+			.banner-text-mobile {
+				font-size: 50px;
+				color: #33526D;
+				font-weight: 100;
+				width: 100%;
+				line-height: 50px;
+				margin: 0;
+			}
+		}

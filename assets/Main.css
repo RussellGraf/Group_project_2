@@ -15,8 +15,8 @@ h1 {
   font-weight: 600;
 }
 
-h2 {
-  font-size: 40px;
+h3 {
+  font-size: 30px;
   font-weight: 300;
 }
 
@@ -34,6 +34,11 @@ a {
 
 .cursorstyle {
   cursor: pointer !important;
+}
+
+.containermax {
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 /*NAV MENU*/
@@ -62,7 +67,7 @@ body, html {
     width: 55px;
     left: 0;
     top: 0;
-    height: 100%;
+    height: 100vh;
     background: #48C2AC;
     z-index: 0;
     margin-bottom: 0px;
@@ -101,10 +106,15 @@ body, html {
 #sidebar ul li:hover a {
     background: #C9223D;
 }
+
+.menu-active {
+  background: #C9223D;
+}
+
 .main-content {
     width: 100%;
-    height: 100%;
-    padding: 10px;
+    height: auto;
+    padding: 10px 10px 0 10px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     position: relative;
@@ -167,10 +177,10 @@ body, html {
   margin-bottom: 0;
 }
 
-.socialicons {
+.footercol {
   float: left;
   padding: 20px;
-  margin-left: 50px;
+  margin-left: 80px;
 }
 
 .sizing {
@@ -179,6 +189,72 @@ body, html {
   margin-right: 20px;
 }
 
+.offersform {
+  float: left;
+  width: 260px;
+  height: 64px;
+  padding: 20px;
+  border: 3px solid white;
+  color: white;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-overflow: clip;
+}
 
+.offersform-submit {
+  float: left;
+  width: auto;
+  padding: 20px;
+  border: 3px solid white;
+  background-color: white;
+  color: #33526D;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-overflow: clip;
+}
+
+#logo-container {
+  float: left;
+  width: 100%;
+}
+
+.logobutton {
+  z-index: -1000;
+  position: relative;
+  left: -25px;
+  width: 250px;
+  height: 75px;
+  background-position: center center;
+  overflow: hidden;
+}
+
+#logo {
+  height: 100px;
+  width: auto;
+}
+
+.breakline {
+  width: 100%;
+  color: #33526D;
+  border: 1px solid #33526D;
+  margin-bottom: 10px;
+}
+
+
+
+      @media (max-width: 629px) {
+    
+        .footercol {
+            margin-left: 60px;
+          }
+      }
+
+
+      @media (max-width: 515px) {
+      
+          .footercol {
+            margin-left: 40px;
+          }
+      }
 
 

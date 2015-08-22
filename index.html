@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Group Project 1 - The Cause</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="assets/main.css">
+		<link rel="stylesheet" type="text/css" href="assets/gallery.css">
+		<link rel="stylesheet" type="text/css" href="assets/aboutus.css">
+		<!-- <link rel="stylesheet" type="text/css" href="assets/products.css"> -->
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,300,700,100,900,900italic,700italic,400italic,300italic,100italic' rel='stylesheet' type='text/css'>
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="assets/jquery.touchSwipe.min.js"></script>
+	</head>
+	<body>
+
+<!-- HEADER -->
+	<div class="container">
+
+			<div id="sidebar">
+				<ul>
+					<li class="menu-active"><a href="index.html">HOME</a></li>
+					<li><a href="products.html">SHOP</a></li>
+					<li><a href="aboutus.html">ABOUT US</a></li>
+				</ul>
+			</div>
+
+		<div class="main-content">
+			<div class="swipe-area"></div>
+			<a href="#" data-toggle=".container" id="sidebar-toggle">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+			</a>
+
+			<div class="content">
+		      	<div class="containermax"> <!-- max width 1000px over whole body -->
+<!-- LOG0 -->
+					<div id="logo-container">
+						<a href="index.html">
+						<div class="logobutton">
+							<img id="logo" src="assets/images/bbold.png">
+						</div>
+						</a>
+					</div>
+
+					<div class="clear"></div>
+					<!-- <hr class="breakline"> -->
+
+<!-- BANNER IMAGE AND TEXT -->
+					<div id="banner-container">
+						<img class="banner-image" src="assets/images/men-wearing-buckle-brown-leather-dress-shoes-main.jpg">
+						
+				<!-- DEACTIVATES ON MOBILE -->
+						<div id="banner-text-desktop-tablet">
+							<h1 class="banner-text">NEVER LET <span class="h1-bold">BAD STYLE</span> HOLD YOU BACK</h1> 
+							<div class="shop-box">
+								<a href="products.html"><h3 class="shop-box-text">SHOP</h3></a>
+							</div>
+						</div>
+				<!-- ACTIVATES ON MOBILE -->
+						<div id="banner-text-container-mobile">
+							<div class="clear"></div>
+							<h1 class="banner-text-mobile">NEVER LET <span class="h1-bold">BAD STYLE</span> HOLD YOU BACK</h1> 
+							<div class="shop-box-mobile">
+								<a href="products.html"><h3 class="shop-box-text">SHOP</h3></a>
+							</div>
+						</div>
+					</div>
+
+<!-- FEATURED PRODUCTS -->
+						
+					<div class="rightcolwrapper marginbottom">
+						<h3 class="marginleft">FEATURED ITEMS</h3>
+						<div class="item">
+							<a href="ProductPage.html"><img class="imagebox" src="http://images.esellerpro.com/3194/I/156/946/156946_1.JPG"></a>
+
+						</div>
+						<div class="item">
+							<a href="ProductPage.html"><img class="imagebox" src="http://i.stpost.com/tricker%E2%80%99s-poe-penny-loafer-shoes-algonquian-split-toe-leather-for-men-in-black~p~4762v_04~400.2.jpg"></a>
+						</div>
+						<div class="item">
+							<a href="ProductPage.html"><img class="imagebox imageflip" src="http://s3-eu-west-1.amazonaws.com/taafooitems/square_2fc1a6d9d91f4d3e.jpg"></a>
+						</div>
+					</div>
+					
+				</div> <!-- CLOSING CONTAINER MAX WIDTH -->
+			</div> <!-- CLOSING CONTENT -->
+		</div> <!-- CLOSING MAIN CONTENT -->
+	
+
+<!-- FOOTER -->
+		<div class="clear"></div>
+
+		<footer>
+			<div class="footercontainer">
+				<div class="containermax">
+
+					<div class="footercol">
+					<h3 class="whitefont">GET EXCLUSIVE OFFERS</h3>
+					<form name="myForm" method="post">
+						<p class="offersform"> <type="text" contenteditable="true"><span id="emailtag">EMAIL</span></p>
+						<p class="offersform-submit"> <type="submit" value="submit"><span id="tag">GO!</span></p>
+					</form>
+					</div>
+
+					<div class="footercol">
+					<h3 class="whitefont">CONNECT WITH US</h3>
+					<a class="sizing" href="http://www.facebook.com"><img src="assets/images/facebook.png"></a>
+					<a class="sizing" href="http://www.twitter.com"><img src="assets/images/twitter.png"></a>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+
+	</div> <!-- CLOSING CONTAINER DIV -->
+
+		<script type="text/javascript">
+		      
+
+		//navigation
+		    $(window).load(function(){
+		        $("[data-toggle]").click(function() {
+		          var toggle_el = $(this).data("toggle");
+		          $(toggle_el).toggleClass("open-sidebar");
+		        });
+		         $(".swipe-area").swipe({
+		              swipeStatus:function(event, phase, direction, distance, duration, fingers)
+		                  {
+		                      if (phase=="move" && direction =="right") {
+		                           $(".container").addClass("open-sidebar");
+		                           return false;
+		                      }
+		                      if (phase=="move" && direction =="left") {
+		                           $(".container").removeClass("open-sidebar");
+		                           return false;
+		                      }
+		                  }
+		          }); 
+		      });
+
+
+		//hover over featured items
+			$(".item").mouseenter(function(){
+	        		$(this).toggleClass("orangeoverlay");
+	    		});
+
+    		$(".item").mouseleave(function(){
+					$(this).toggleClass("orangeoverlay");
+				});
+		
+		//submit form footer
+			$(".offersform-submit").click(function() {
+				$("#emailtag").animate({
+					opacity: 0
+				}, 200);
+				$(".offersform").animate({
+					width: 0
+				}, 1000);
+				$(".offersform-submit").delay(800).animate({
+					width: 292,
+					}, 1000);
+				$("#tag").delay(500).text("THANK YOU!");
+				$("#emailtag").toggle();
+			});
+
+		</script>
+	</body>
+</html>
