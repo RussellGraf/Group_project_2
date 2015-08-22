@@ -39,7 +39,7 @@
 <!-- TOP COL -->
 					<div class="topcol marginleft">
 						<h1 class="marginbottom margintop">SHOP</h1>
-						<a class="stylebutton active" id="allbutton" href="#">FEATURED</a>
+						<a class="stylebutton active" id="featuredbutton" href="#">FEATURED</a>
 						<a class="stylebutton subnavclick" id="classicbutton" href="#">CLASSIC</a>
 						<a class="stylebutton subnavclick" id="casualbutton" href="#">CASUAL</a>
 						<a class="stylebutton subnavclick" id="sportybutton" href="#">SPORTY</a>
@@ -210,6 +210,7 @@
 			});
 
 		//toggles visibility of item
+
     		$("#classicbutton").click(function(){
         		$(".classic").toggle(200);
     		});
@@ -221,6 +222,14 @@
     		$("#sportybutton").click(function(){
         		$(".sporty").toggle(200);
     		});
+
+    		$(".item").mouseenter(function(){
+        		$(this).toggleClass("orangeoverlay");
+    		});
+
+    		$(".item").mouseleave(function(){
+					$(this).toggleClass("orangeoverlay");
+				});
 
 		
 

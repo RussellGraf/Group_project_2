@@ -23,14 +23,9 @@
 }
 
 .orangeoverlay {
-    background-color: #FD6C5C;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-}
+	background-color: #FD6C5C;
+	overflow: hidden;
+} 
 
 .casual {
 	display: none;
