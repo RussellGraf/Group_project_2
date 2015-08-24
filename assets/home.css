@@ -32,6 +32,10 @@
 	line-height: 85px;
 }
 
+.shop-box-text:hover {
+	font-weight: 400;
+}
+
 .h1-bold {
 	font-weight: 300;
 }

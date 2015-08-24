@@ -44,7 +44,7 @@ a {
 /*NAV MENU*/
 
 body, html {
-    height: 100%;
+    height: auto;
     margin: 0;
 }
 .container {
@@ -76,7 +76,7 @@ body, html {
     background: #DF314D;
     position: absolute;
     width: 240px;
-    height: 100%;
+    height: 100vh;
     left: -240px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
