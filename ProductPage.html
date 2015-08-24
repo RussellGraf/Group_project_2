@@ -176,8 +176,32 @@
 
     		$(".item").mouseleave(function(){
 					$(this).toggleClass("orangeoverlay");
-				});
+			});
 
+
+    		/*$('#img1').mouseenter(function(){
+        		$('#item1').toggleClass("orangeoverlay");
+        		$('#img1').animate({
+        			opacity: 0.1
+        		});
+    		});
+
+    		$('#img1').mouseleave(function(){
+				$('#item1').toggleClass("orangeoverlay");
+				$('#img1').animate({
+        			opacity: 1.0
+        		});
+			});*/
+
+    		/*function hoverFade(el, timeout) {
+			  $(el).mouseenter(function(event){
+			    $(event.currentTarget).fadeOut(timeout, function() {
+			      console.log('Product Hover');
+			    });
+			  	});
+			}
+
+			hoverFade("#img1", 500);*/
 
 		//submit form footer, javascript alert
 			$(".offersform-submit").click(function() {
