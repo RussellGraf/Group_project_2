@@ -1,0 +1,184 @@
+/*HOME CSS*/
+
+#banner-container {
+	float: left;
+	width: 100%;
+	margin-top: 25px;
+}
+
+.banner-image {
+	width: 100%;
+	height: auto;
+	background-position: center center;
+}
+
+#banner-text-container-mobile {
+	float: left;
+	width: 100%;
+	display: none;
+}
+
+#banner-text-container-desktop-tablet {
+}
+
+.banner-text {
+	font-size: 100px;
+	position: absolute;
+	top: 105px;
+	margin-left: 200px;
+	color: white;
+	font-weight: 100;
+	width: 600px;
+	line-height: 85px;
+}
+
+.shop-box-text:hover {
+	font-weight: 400;
+}
+
+.h1-bold {
+	font-weight: 300;
+}
+
+.shop-box {
+	padding: 18px 62px;
+	border: 2px solid white;
+	position: absolute;
+	top: 435px;
+	margin-left: 493px;
+}
+
+.shop-box-text {
+	color: white;
+	font-weight: 300;
+	margin: 0;
+}
+
+.rightcolwrapper {
+	float: left;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	background-color: white;
+	padding-left: 3.5%;
+	margin-bottom: 40px;
+}
+
+.marginleft {
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+.marginbottom {
+  margin-bottom: 50px;
+}
+
+.margintop {
+  margin-top: 10px
+}
+
+
+		@media (max-width: 870px) {
+
+			.banner-text {
+				font-size: 90px;
+				position: absolute;
+				top: 105px;
+				margin-left: 180px;
+				color: white;
+				font-weight: 100;
+				width: 600px;
+				line-height: 80px;
+			}
+
+			.shop-box {
+				padding: 15px 55px;
+				border: 2px solid white;
+				position: absolute;
+				top: 409px;
+				margin-left: 430px;
+			}
+
+		}
+
+		@media (max-width: 777px) {
+
+			.banner-text {
+				font-size: 75px;
+				position: absolute;
+				top: 105px;
+				margin-left: 140px;
+				color: white;
+				font-weight: 100;
+				width: 400px;
+				line-height: 65px;
+			}
+
+			.shop-box {
+				padding: 10px 45px;
+				border: 2px solid white;
+				position: absolute;
+				top: 358px;
+				margin-left: 350px;
+			}
+
+		}
+
+		@media (max-width: 665px) {
+
+			.banner-text {
+				font-size: 60px;
+				position: absolute;
+				top: 105px;
+				margin-left: 100px;
+				color: white;
+				font-weight: 100;
+				width: 400px;
+				line-height: 55px;
+			}
+
+			.shop-box {
+				padding: 5px 34px;
+				border: 2px solid white;
+				position: absolute;
+				top: 320px;
+				margin-left: 270px;
+			}
+
+			.shop-box-text {
+				font-size: 22px;
+				font-weight: 400;
+			}
+
+		}
+
+		@media (max-width: 605px) {
+
+			#banner-text-desktop-tablet {
+				display: none;
+			}
+
+			#banner-text-container-mobile {
+				display: block;
+			}
+
+			.banner-text-mobile {
+				font-size: 58px;
+				color: #33526D;
+				font-weight: 100;
+				width: 100%;
+				line-height: 50px;
+				margin: 0;
+			}
+
+			.shop-box-mobile {
+				padding: 10px 10px;
+				display: block;
+				background-color: #33526D;
+				margin-top: 10px;
+			}
+
+			.shop-box-text {
+				color: white;
+			}
+		}

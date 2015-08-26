@@ -1,0 +1,89 @@
+.item {
+	float: left;
+	overflow: hidden;
+	box-sizing: border-box;
+	margin: 30px 15px 0 15px;
+	border: 4px solid #FD6C5C;
+	padding: 10px;
+}
+
+.imagebox {
+	height: 250px;
+	width: 250px;
+	background-position: center center;
+	background-size: cover;
+}
+
+.imageflip {
+	transform: scale(-1, 1);
+}
+
+.imagebox:hover {
+	cursor: pointer !important;
+}
+
+.orangeoverlay {
+	background-color: #FD6C5C;
+	overflow: hidden;
+} 
+
+.casual {
+	display: none;
+}
+
+.classic {
+	display: none;
+}
+
+.sporty {
+	display: none;
+}
+
+		@media (max-width: 1051px) {
+
+			.imagebox {
+				height: 350px;
+				width: 350px;
+			}
+		}
+
+		@media (max-width: 940px) {
+			
+			.imagebox {
+				height: 250px;
+				width: 250px;
+			}
+		}
+
+		@media (max-width: 735px) {
+			
+			.imagebox {
+				height: 200px;
+				width: 200px;
+			}
+		}
+
+
+		@media (max-width: 629px) {
+			
+			.imagebox {
+				height: 350px;
+				width: 350px;
+			}
+		}
+
+		@media (max-width: 515px) {
+			
+			.imagebox {
+				height: 250px;
+				width: 250px;
+			}
+		}
+
+		@media (max-width: 420px) {
+			
+			.imagebox {
+				height: 225px;
+				width: 225px;
+			}
+		}

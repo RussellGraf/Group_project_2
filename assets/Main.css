@@ -1,0 +1,261 @@
+/*
+Dark Orange #FD6C5C
+Light Orange #FD8854
+Blue #33526D
+light Blue #83B9C2
+green #48C2AC
+*/
+
+h1, h2, h3, h4, h5, h6, a {
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.whitefont {
+  color: white;
+}
+
+p {
+	font-family: 'Droid Serif', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cursorstyle {
+  cursor: pointer !important;
+}
+
+.containermax {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/*NAV MENU*/
+
+body, html {
+/*    height: 100%;*/
+    margin: 0;
+}
+.container {
+    position: relative;
+/*    height: 100%;*/
+    width: 100%;
+    left: 0;
+    -webkit-transition:  left 0.4s ease-in-out;
+    -moz-transition:  left 0.4s ease-in-out;
+    -ms-transition:  left 0.4s ease-in-out;
+    -o-transition:  left 0.4s ease-in-out;
+    transition:  left 0.4s ease-in-out;
+}
+.container.open-sidebar {
+    left: 240px;
+}
+
+.swipe-area {
+    position: absolute;
+    width: 55px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+/*    height: 100vh;*/
+    background: #48C2AC;
+    z-index: 0;
+    margin-bottom: 0px;
+}
+#sidebar {
+    background: #DF314D;
+    position: absolute;
+    width: 240px;
+    height: 100%;
+    left: -240px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+#sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#sidebar ul li {
+    margin: 0;
+}
+#sidebar ul li a {
+    padding: 15px 20px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #C9223D;
+    -webkit-transition:  background 0.3s ease-in-out;
+    -moz-transition:  background 0.3s ease-in-out;
+    -ms-transition:  background 0.3s ease-in-out;
+    -o-transition:  background 0.3s ease-in-out;
+    transition:  background 0.3s ease-in-out;
+}
+
+#sidebar ul li:hover a {
+    background: #C9223D;
+}
+
+.menu-active {
+  background: #C9223D;
+}
+
+.main-content {
+    width: 100%;
+    height: auto;
+    padding: 10px 10px 0 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+}
+.main-content .content{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding-left: 60px;
+    width: 100%;
+}
+
+.main-content .content p {
+    width: 100%;
+    line-height: 160%;
+}
+.main-content #sidebar-toggle {
+    background: #DF314D;
+    border-radius: 3px;
+    display: block;
+    position: relative;
+    padding: 10px 7px;
+    float: left;
+}
+.main-content #sidebar-toggle .bar{
+    display: block;
+    width: 18px;
+    margin-bottom: 3px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 1px;   
+}
+.main-content #sidebar-toggle .bar:last-child{
+     margin-bottom: 0;   
+}
+
+/*#graybarfixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 55px;
+  background-color: #48C2AC;
+}
+*/
+/*FOOTER*/
+
+.clear {
+  clear: both;
+  height: 1px;
+  width: 100%;
+}
+
+.footercontainer {
+  float: left;
+  width: 100%;
+  background-color: #33526D;
+  padding: 30px;
+  height: auto;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+.footercol {
+  float: left;
+  padding: 20px;
+  margin-left: 80px;
+}
+
+.sizing {
+  height: 40px;
+  width: auto;
+  margin-right: 20px;
+}
+
+.offersform {
+  float: left;
+  width: 260px;
+  height: 64px;
+  padding: 20px;
+  border: 3px solid white;
+  color: white;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-overflow: clip;
+}
+
+.offersform-submit {
+  float: left;
+  width: auto;
+  padding: 20px;
+  border: 3px solid white;
+  background-color: white;
+  color: #33526D;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-overflow: clip;
+}
+
+#logo-container {
+/*  float: left;*/
+  width: 100%;
+}
+
+.logobutton {
+  z-index: -1000;
+  position: relative;
+  left: -25px;
+  width: 250px;
+  height: 75px;
+  background-position: center center;
+  overflow: hidden;
+}
+
+#logo {
+  height: 100px;
+  width: auto;
+}
+
+.breakline {
+  width: 100%;
+  color: #33526D;
+  border: 1px solid #33526D;
+  margin-bottom: 10px;
+}
+
+
+
+      @media (max-width: 629px) {
+    
+        .footercol {
+            margin-left: 60px;
+          }
+      }
+
+
+      @media (max-width: 515px) {
+      
+          .footercol {
+            margin-left: 40px;
+          }
+      }
+
+

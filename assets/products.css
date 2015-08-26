@@ -1,0 +1,144 @@
+ /*MIDDLE COL*/
+
+.rightcolwrapper {
+	float: left;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	background-color: white;
+	padding-left: 3.5%;
+	margin-bottom: 40px;
+}
+
+/*TOP COL*/
+
+.topcol {
+	float: left;
+	width: 100%;
+	padding-right: 45px;
+	box-sizing: border-box;
+}
+
+h1.paddingleft{
+	display: inline-block;
+	float: left;
+	width: 200px;
+}
+
+.stylebutton {
+	float: left;
+	display: inline-block;
+	padding: 10px;
+	margin-right: 20px;
+	color: #33526D;
+	/*border-bottom: 4px solid #33526D;*/
+}
+
+.stylebutton:hover {
+	background-color: #33526D;
+	color: white;
+}
+
+.active {
+	background-color: #33526D;
+	color: white;
+}
+
+.marginleft {
+  padding-left: 50px;
+  margin-bottom: 0;
+}
+
+.paddingleft {
+  padding-left: 50px;
+  margin-bottom: 0;
+}
+
+.marginbottom {
+  margin-bottom: 10px;
+}
+
+.margintop {
+  margin-top: 10px
+}
+
+		@media (max-width: 1051px) {
+
+			.marginleft {
+			padding-left: 45px;
+			margin-bottom: 0;
+			}
+		}
+
+		@media (max-width: 940px) {
+			
+			.marginleft {
+			padding-left: 40px;
+			margin-bottom: 0;
+			}
+		}
+
+		@media (max-width: 735px) {
+			
+			.marginleft {
+			padding-left: 35px;
+			margin-bottom: 0;
+			}
+		}
+
+		@media (max-width: 629px) {
+			
+			.marginleft {
+			padding-left: 30px;
+			margin-bottom: 0;
+			}
+
+			.stylebutton {
+				width: 100%;
+				margin-right: 20px;
+				border-bottom: 4px solid #33526D;
+			}
+
+		}
+
+		@media (max-width: 629px) {
+			
+			.marginleft {
+			padding-left: 30px;
+			margin-bottom: 0;
+			}
+
+			.stylebutton {
+				width: 365px;
+				margin-right: 20px;
+				border-bottom: 4px solid #33526D;
+			}
+		}
+
+		@media (max-width: 515px) {
+			
+			.marginleft {
+			padding-left: 25px;
+			margin-bottom: 0;
+			}
+
+			.stylebutton {
+				width: 260px;
+				margin-right: 20px;
+				border-bottom: 4px solid #33526D;
+			}
+		}
+
+		@media (max-width: 420px) {
+			
+			.marginleft {
+			padding-left: 25px;
+			margin-bottom: 0;
+			}
+
+			.stylebutton {
+				width: 233px;
+				margin-right: 20px;
+				border-bottom: 4px solid #33526D;
+			}
+		}
