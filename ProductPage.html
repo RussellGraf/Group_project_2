@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="assets/gallery.css">
 		<link rel="stylesheet" type="text/css" href="assets/products.css">
 		<link rel="stylesheet" type="text/css" href="assets/productpage.css">
+		<!-- <link rel="stylesheet" type="text/css" href="assets/lightbox.css"> -->
 		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,300,700,100,900,900italic,700italic,400italic,300italic,100italic' rel='stylesheet' type='text/css'>
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -34,7 +35,7 @@
 			</a>
 
 			<div class="content">
-		      	<div class="containermax">
+		      	<div class="containermax"> <!-- max width 1000px over whole body -->
 
 		      		<div id="logo-container" class="marginleft">
 						<a href="index.html">
@@ -84,7 +85,6 @@
 								<a href="#"><h4 class="buy-box-text">ADD TO CART</h4></a>
 						</div>
 					</div>
-
 					<div class="clear"></div>
 
 <!-- RELATED PRODUCTS COL -->
@@ -101,44 +101,38 @@
 							<a href="ProductPage.html"><img class="imagebox imageflip" src="http://s3-eu-west-1.amazonaws.com/taafooitems/square_2fc1a6d9d91f4d3e.jpg"></a>
 						</div>
 					</div>
-					
+					<div class="clear"></div>
 
-
-					</div>
 				</div> <!-- CLOSING CONTAINER MAX WIDTH -->
+						<div class="clear"></div>
 			</div> <!-- CLOSING CONTENT -->
+
+				<footer>
+					<div class="footercontainer">
+						<div class="containermax">
+
+							<div class="footercol">
+							<h3 class="whitefont">GET EXCLUSIVE OFFERS</h3>
+							<form name="myForm" method="post">
+								<p class="offersform"> <type="text" contenteditable="true"><span id="emailtag">EMAIL</span></p>
+								<p class="offersform-submit"> <type="submit" value="submit"><span id="tag">GO!</span></p>
+							</form>
+							</div>
+
+							<div class="footercol">
+							<h3 class="whitefont">CONNECT WITH US</h3>
+							<a class="sizing" href="http://www.facebook.com"><img src="assets/images/facebook.png"></a>
+							<a class="sizing" href="http://www.twitter.com"><img src="assets/images/twitter.png"></a>
+							</div>
+
+						</div>
+					</div>
+				</footer>
+				<div class="clear"></div>
 		</div> <!-- CLOSING MAIN CONTENT -->
-	
-
-<!-- FOOTER -->
-		<div class="clear"></div>
-
-		<footer>
-			<div class="footercontainer">
-				<div class="containermax">
-
-					<div class="footercol">
-					<h3 class="whitefont">GET EXCLUSIVE OFFERS</h3>
-					<form name="myForm" method="post">
-						<p class="offersform"> <type="text" contenteditable="true"><span id="emailtag">EMAIL</span></p>
-						<p class="offersform-submit"> <type="submit" value="submit"><span id="tag">GO!</span></p>
-					</form>
-					</div>
-
-					<div class="footercol">
-					<h3 class="whitefont">CONNECT WITH US</h3>
-					<a class="sizing" href="http://www.facebook.com"><img src="assets/images/facebook.png"></a>
-					<a class="sizing" href="http://www.twitter.com"><img src="assets/images/twitter.png"></a>
-					</div>
-
-				</div>
-			</div>
-		</footer>
-
 	</div> <!-- CLOSING CONTAINER DIV -->
 
-		<script type="text/javascript">
-		      
+		<script>
 
 		//navigation
 		    $(window).load(function(){
@@ -167,7 +161,7 @@
 
 		//click to change button CSS on sub nav
 			$(".subnavclick").click( function() {
-					$(this).toggleClass("active");
+				$(this).toggleClass("active");
 			});
 
 			$(".item").mouseenter(function(){
@@ -175,7 +169,7 @@
     		});
 
     		$(".item").mouseleave(function(){
-					$(this).toggleClass("orangeoverlay");
+				$(this).toggleClass("orangeoverlay");
 			});
 
 
