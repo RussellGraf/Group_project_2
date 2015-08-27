@@ -172,3 +172,24 @@
 				margin: 0;
 			}
 		}
+         
+
+         #faq{
+         	 
+         	 padding: 0 30px;
+         }
+
+         #contact_form{
+
+         	background-color: #D3D3D3;
+         	padding-left: 20px;
+         	margin: 0 auto;
+         	width: 30%;
+         	border-radius: 20px;
+         	
+         }
+        .one{
+        	font-family: italic;
+        	color: red;
+
+        }
