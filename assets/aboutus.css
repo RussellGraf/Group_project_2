@@ -1,7 +1,6 @@
 /*HOME CSS*/
 
 #banner-container {
-	float: left;
 	position: relative;
 	width: 100%;
 	margin-top: 25px;
@@ -14,13 +13,14 @@
 	vertical-align: middle;
 }
 
-.overlaybanner {
+/*.overlaybanner {
 	background-color: #33526D;
 	opacity: 0.3;
 	height: 100%;
-	position: absolute;
 	width: 100%;
-}
+	top: 0;
+	position: absolute;
+}*/
 
 #banner-text-container-mobile {
 	float: left;
@@ -165,12 +165,12 @@ input {
 
 .inline-form {
 	display: inline-block;
-	margin-right: 1%;
-	width: 48%;
+	margin-right: .5%;
+	width: 49%;
 }
 
 textarea {
-	width: 100%;
+	width: 99%;
 }
 
 #submit_button {
