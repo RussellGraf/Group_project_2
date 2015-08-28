@@ -192,7 +192,8 @@ body, html {
 
 .offersform {
   float: left;
-  width: 260px;
+  position: relative;
+  width: 77%;
   height: 64px;
   padding: 20px;
   border: 3px solid white;
@@ -204,7 +205,8 @@ body, html {
 
 .offersform-submit {
   float: left;
-  width: auto;
+  position: relative;
+  width: 23%;
   padding: 20px;
   border: 3px solid white;
   background-color: white;

@@ -3,6 +3,7 @@
 	<head>
 		<title>Group Project 1 - The Cause</title>
 		<meta charset="UTF-8">
+		<!-- <link rel="stylesheet" type="text/css" href="assets/reset.css"> -->
 		<link rel="stylesheet" type="text/css" href="assets/main.css">
 		<link rel="stylesheet" type="text/css" href="assets/gallery.css">
 		<link rel="stylesheet" type="text/css" href="assets/aboutus.css">
@@ -11,7 +12,8 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,300,700,100,900,900italic,700italic,400italic,300italic,100italic' rel='stylesheet' type='text/css'>
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="assets/jquery.touchSwipe.min.js"></script>
-		<script async defer src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>
+		<script async defer
+        src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>
 	</head>
 	<body>
 
@@ -47,7 +49,8 @@
 
 <!-- BANNER IMAGE AND TEXT -->
 					<div id="banner-container">
-						<img class="banner-image overlaybanner" src="assets/images/553ef525fb5a62ca455714fc320718a3.png">
+						<img class="banner-image" src="assets/images/553ef525fb5a62ca455714fc320718a3.png">
+						<div class="overlaybanner"></div>
 						
 				<!-- DEACTIVATES ON MOBILE -->
 						<div id="banner-text-desktop-tablet">
@@ -81,48 +84,64 @@
 					<div class="clear"></div>
 
 <!-- FAQ -->
-					<div id="faq">
-					<h2>FAQ'S</h2>
-						<div>
-							<h2> How do I place an order?</h2>
-							<p>Ordering online is easy! When you find an item you would like to purchase, select a color and size and click "add to bag" button. At this point you may continue to shop for more items, add the ones you'd like to purchase to your bag.When you finish shopping, click “shopping bag" button at the top-right corner of the page to check out. You will find a quick summary of your order on the right side of the following page. Follow the check out process step by step.If all looks well, click "place order". Then, your order is successfully placed.If you'd like to modify your order, you may do so by removing or changing the quantity of your order.Once you are done, click “proceed to checkout” or “Check out with PayPal.</p>
+					<div id="faqwrapper">
+					<h2 style="margin-bottom: 5px;'">FAQ'S</h2>
+						<div class="expandable">
+							<div class="headline">
+								<h4>How do I place an order?</h4>
+    							<div class="expand"><span>+ Expand</span></div>
+							</div>
+		    				<div class="answer">
+								Ordering online is easy! When you find an item you would like to purchase, select a color and size and click "add to bag" button. At this point you may continue to shop for more items, add the ones you'd like to purchase to your bag.When you finish shopping, click “shopping bag" button at the top-right corner of the page to check out. You will find a quick summary of your order on the right side of the following page. Follow the check out process step by step.If all looks well, click "place order". Then, your order is successfully placed.If you'd like to modify your order, you may do so by removing or changing the quantity of your order.Once you are done, click “proceed to checkout” or “Check out with PayPal.
+		    				</div>
+		    				<div style="border-bottom: 1px solid #FD6C5C;"></div>
+						</div>
+
+						<div class="expandable">
+							<div class="headline">
+								<h4>How do I check the status of my order?</h4>
+    							<div class="expand"><span>+ Expand</span></div>
+							</div>
+		    				<div class="answer">
+								<p>To check the status of your order after it has been placed, simply:1. Click "my account" at the top of any page2. Unless you are already signed in, sign in to your account using the email address and password you used when you made your purchase3. On the left side of the page, click “view all” under "My Orders"4. The status of your order should appear on the page. For detailed order information, click “view order”.5. If your order is listed as shipped, you can track your shipment under "track your orders" on the bottom of the page.</p>
+		    				</div>
+		    				<div style="border-bottom: 1px solid #FD6C5C;"></div>
+						</div>
+
+						<div class="expandable">
+							<div class="headline">
+								<h4>How do I track my package?</h4>
+    							<div class="expand"><span>+ Expand</span></div>
+							</div>
+		    				<div class="answer">
+								You can easily track your package by signing into your account using the email address and password you used when you made your purchase, and clicking "track your orders" on My Orders-View Order page.
+		    				</div>
+		    				<div style="border-bottom: 1px solid #FD6C5C;"></div>
 						</div>
 							
-						<div> 
-							<h2> How do I check the status of my order?</h2>
-							<p>To check the status of your order after it has been placed, simply:1. Click "my account" at the top of any page2. Unless you are already signed in, sign in to your account using the email address and password you    used when you made your purchase3. On the left side of the page, click “view all” under "My Orders"4. The status of your order should appear on the page. For detailed order information, click “view order”.5. If your order is listed as shipped, you can track your shipment under "track your orders" on the bottom of the page.</p>
-						</div>
-						
-						<div>
-
-							<h2> How do I track my package?</h2> 
-							<p>You can easily track your package by signing into your account using the email address and password you used when you made your purchase, and clicking "track your orders" on My Orders-View Order page.</p>
-						</div>
-					</div>
-
-<!-- form section-->
-
-					<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-						<div>
-							<label for="name">Your name:</label><br />
-							<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-						</div>
-						<div>
-							<label for="email">Your email:</label><br />
-							<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-						</div>
-						<div >
-							<label for="message">Your message:</label><br />
-							<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-						</div>
-								<input id="submit_button" type="submit" value="Send email">
-					</form>	
+						<h2 style="margin-top: 90px;">Get in Touch</h2>
+						<form class=" margintop" id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+							<div class="inline-form">
+								<label for="name">Your name:</label><br />
+								<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+							</div>
+							<div class="inline-form">
+								<label for="email">Your email:</label><br />
+								<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+							</div>
+							<div >
+								<label for="message">Your message:</label><br />
+								<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+							</div>
+							<input id="submit_button" type="submit" value="Send email">
+						</form>	
 
 <!-- start of contact form-->		
-					<div id="contact info">
+					<div style="margin-top: 70px;" id="contact info">
 				 		<h2> Contact Information</h2>
 						<p>To speak with a BBold Sales Associate by phone, feel free to call 1.877.551.7257, 24 hours a day, 7 days a week. If you are calling from outside of the U.S. or Canada, please dial 800.7257.7257.Email us anytime FAX us anytime: 601.968.5281Chat with us: Clicking the "Chat" link here, or clicking "Chat" at the bottom of your screen, makes it possible to chat with a saks.com Sales Associate. This service is available 24 hours a day, 7 days a week.</p> 
 					</div><!-- end of contact form -->	
+				</div>
 					<div class="clear"></div>
 
 				</div> <!-- CLOSING CONTAINER MAX WIDTH -->
@@ -183,23 +202,27 @@
 					opacity: 0
 				}, 200);
 				$(".offersform").animate({
-					width: 0
-				}, 1000);
-				$(".offersform-submit").delay(800).animate({
-					width: 292,
-					}, 1000);
-				$("#tag").delay(500).text("THANK YOU!");
-				$("#emailtag").toggle();
+					width: 0, //change to percentage
+					padding: 0,
+					borderWidth: 0
+				}, 1000, function() {
+					// grow the other one
+					$(".offersform-submit").animate({
+						width: "100%"
+					}, 1000, function() {
+						$("#tag").text("THANK YOU!");
+					});
+				});
 			});
 
 
 
 		//google maps
 			function initMap() {
-			  var myLatLng = {lat: 40.7844236, lng: -73.9485762};
+			  var myLatLng = {lat: 40.784, lng: -73.948};
 
 			  var map = new google.maps.Map(document.getElementById('map'), {
-			    zoom: 12,
+			    zoom: 13,
 			    center: myLatLng
 			  });
 
@@ -210,6 +233,29 @@
 			  });
 			}
 
+
+		//collapse FAQ col
+			$(".expand").click( function() {
+
+					if($(this).hasClass("open")) {
+						$(this).removeClass("open");
+						$(this).parent().next().slideUp();
+					} else {
+						$(this).addClass("open");
+						$(this).parent().next().slideDown();
+					}
+
+				// if has class expanded
+				// slideUp
+				// remove class expanded
+
+				// else
+				// slidedown
+				// add class expanded
+
+			});
+
 		</script>
+
 	</body>
 </html>

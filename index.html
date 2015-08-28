@@ -154,13 +154,17 @@
 					opacity: 0
 				}, 200);
 				$(".offersform").animate({
-					width: 0
-				}, 1000);
-				$(".offersform-submit").delay(800).animate({
-					width: 292,
-					}, 1000);
-				$("#tag").delay(500).text("THANK YOU!");
-				$("#emailtag").toggle();
+					width: 0, //change to percentage
+					padding: 0,
+					borderWidth: 0
+				}, 1000, function() {
+					// grow the other one
+					$(".offersform-submit").animate({
+						width: "100%"
+					}, 1000, function() {
+						$("#tag").text("THANK YOU!");
+					});
+				});
 			});
 
 		</script>
