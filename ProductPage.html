@@ -91,14 +91,19 @@
 					<div class="rightcolwrapper" style="margin: 50px 0 30px 0">
 						<h3 style="margin: 0 0 0 20px;">RELATED ITEMS</h3>
 						<div class="item">
-							<a href="ProductPage.html"><img class="imagebox imageflip" src="http://g03.a.alicdn.com/kf/HTB1f3JKIXXXXXboXpXXq6xXFXXXH/Men-Shoes-For-Driving-New-Italian-Style-Leather-Loafers-Male-Moccasins-Zapatos-Hombre-Fashion-Flats-Sapatos.jpg"></a>
+							<img class="imagebox" src="http://images.esellerpro.com/3194/I/156/946/156946_1.JPG">
+							<div class="orangeoverlay"><h2><a class="shoe-name-link" href="ProductPage.html">Shoe Name</a></h2><p>Price: $595.00</div>
+						</div>
 
-						</div>
 						<div class="item">
-							<a href="ProductPage.html"><img class="imagebox imageflip" src="http://g04.a.alicdn.com/kf/HTB1HWu6IFXXXXaEaXXXq6xXFXXXy/2015-fashion-loafers-handmade-slip-on-Sewing-men-shoes-Italian-style-classical-walking-travel-drive-black.jpg"></a>
+							<img class="imagebox" src="http://i.stpost.com/tricker%E2%80%99s-poe-penny-loafer-shoes-algonquian-split-toe-leather-for-men-in-black~p~4762v_04~400.2.jpg">
+							<div class="orangeoverlay"><h2><a class="shoe-name-link" href="ProductPage.html">Shoe Name</a></h2><p>Price: $595.00</div>
 						</div>
+
 						<div class="item">
-							<a href="ProductPage.html"><img class="imagebox imageflip" src="http://s3-eu-west-1.amazonaws.com/taafooitems/square_2fc1a6d9d91f4d3e.jpg"></a>
+							<img class="imagebox imageflip" src="http://s3-eu-west-1.amazonaws.com/taafooitems/square_2fc1a6d9d91f4d3e.jpg">
+							<div class="orangeoverlay"><h2><a class="shoe-name-link" href="ProductPage.html">Shoe Name</a></h2><p>Price: $595.00</div>
+						</div>
 						</div>
 					</div>
 					<div class="clear"></div>
@@ -165,37 +170,12 @@
 			});
 
 			$(".item").mouseenter(function(){
-        		$(this).toggleClass("orangeoverlay");
+        		$(this).children().fadeIn();
     		});
 
     		$(".item").mouseleave(function(){
-				$(this).toggleClass("orangeoverlay");
+				$(".orangeoverlay").fadeOut();
 			});
-
-
-    		/*$('#img1').mouseenter(function(){
-        		$('#item1').toggleClass("orangeoverlay");
-        		$('#img1').animate({
-        			opacity: 0.1
-        		});
-    		});
-
-    		$('#img1').mouseleave(function(){
-				$('#item1').toggleClass("orangeoverlay");
-				$('#img1').animate({
-        			opacity: 1.0
-        		});
-			});*/
-
-    		/*function hoverFade(el, timeout) {
-			  $(el).mouseenter(function(event){
-			    $(event.currentTarget).fadeOut(timeout, function() {
-			      console.log('Product Hover');
-			    });
-			  	});
-			}
-
-			hoverFade("#img1", 500);*/
 
 		//submit form footer, javascript alert
 			$(".offersform-submit").click(function() {
@@ -203,7 +183,7 @@
 					opacity: 0
 				}, 200);
 				$(".offersform").animate({
-					width: 0, //change to percentage
+					width: 0, //change css to percentage
 					padding: 0,
 					borderWidth: 0
 				}, 1000, function() {

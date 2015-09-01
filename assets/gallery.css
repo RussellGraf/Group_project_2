@@ -1,5 +1,6 @@
 .item {
 	float: left;
+	position: relative;
 	overflow: hidden;
 	box-sizing: border-box;
 	margin: 30px 15px 0 15px;
@@ -24,8 +25,37 @@
 
 .orangeoverlay {
 	background-color: #FD6C5C;
+	opacity: 0.95;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
 	overflow: hidden;
+	display: none;
 } 
+
+.orangeoverlay h2 {
+	color: black;
+	margin-top: 38%;
+	text-align: center;
+	width: 100%;
+	padding: 0;
+	margin-bottom: 20px;
+} 
+
+.orangeoverlay p {
+	color: black;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+	margin-top: 0;
+} 
+
+.shoe-name-link {
+	color: black !important;
+	text-decoration: none;
+}
 
 .casual {
 	display: none;

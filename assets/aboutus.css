@@ -13,14 +13,14 @@
 	vertical-align: middle;
 }
 
-/*.overlaybanner {
+.overlaybanner {
 	background-color: #33526D;
 	opacity: 0.3;
 	height: 100%;
 	width: 100%;
 	top: 0;
 	position: absolute;
-}*/
+}
 
 #banner-text-container-mobile {
 	float: left;
@@ -72,7 +72,7 @@
 .about-col {
 	float: left;
 	width: 50%;
-	padding: 30px;
+	padding: 30px 30px 0 30px;
 	height: auto;
 /*	border-right: 4px solid #48C2AC;*/
 	box-sizing: border-box;
@@ -107,7 +107,7 @@
 }
 
 #faqwrapper {
-	padding: 30px;
+	padding: 0 30px 30px 30px;
 }
 
 .expandable {
@@ -125,7 +125,6 @@
 	font-weight: 400;
 	margin-bottom: 10px;
 	width: 100%;
-	background-color: white;
 }
 
 .expand {
@@ -138,9 +137,15 @@
     bottom: 0px;
 }
 
+.border-bottom {
+	border-bottom: 1px solid #FD6C5C;
+	position: relative;
+	top: 40px;
+}
+
 .answer {
 	display: none;
-    padding: 0 0 20px 0;
+    padding: 0;
     margin-top: 50px
 }
 
@@ -180,49 +185,38 @@ textarea {
 
 }
 
+		@media (max-width: 1027px) {
 
+			.banner-text {
+				font-size: 90px;
+				line-height: 80px;
+			}
+		}
 
 		@media (max-width: 900px) {
 
 			.banner-text {
-				font-size: 80px;
-				position: absolute;
-				top: 105px;
-				margin-left: 180px;
-				color: white;
-				font-weight: 100;
-				width: 600px;
-				line-height: 70px;
-			}
-		}
-
-		@media (max-width: 777px) {
-
-			.banner-text {
 				font-size: 75px;
-				position: absolute;
-				top: 105px;
-				margin-left: 140px;
-				color: white;
-				font-weight: 100;
 				width: 400px;
 				line-height: 65px;
 			}
 		}
 
-		@media (max-width: 665px) {
+		@media (max-width: 790px) {
 
 			.banner-text {
 				font-size: 60px;
-				position: absolute;
-				top: 105px;
-				margin-left: 100px;
-				color: white;
-				font-weight: 100;
 				width: 400px;
 				line-height: 55px;
+				top: 50%;
+				left: 50%;
+				margin-left: -170px;
+				margin-top: -120px;
 			}
+		}
 
+		@media (max-width: 665px) {
+			
 			.about-col {
 				width: 100%;
 			}
@@ -251,3 +245,14 @@ textarea {
 				margin: 0;
 			}
 		}
+
+/*		@media (max-width: 560px) {
+			
+			.expand {
+				background-color: #FD6C5C;
+			    width: 100%;
+			    position: relative;
+			    right: 0;
+			    bottom: 0px;
+			}
+		}*/

@@ -5,7 +5,8 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="assets/main.css">
 		<link rel="stylesheet" type="text/css" href="assets/gallery.css">
-		<link rel="stylesheet" type="text/css" href="assets/aboutus.css">
+		<!-- <link rel="stylesheet" type="text/css" href="assets/aboutus.css"> -->
+		<link rel="stylesheet" type="text/css" href="assets/products.css">
 		<link rel="stylesheet" type="text/css" href="assets/home.css">
 		<!-- <link rel="stylesheet" type="text/css" href="assets/products.css"> -->
 		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -73,15 +74,20 @@
 						
 					<div class="rightcolwrapper marginbottom">
 						<h3 class="marginleft">FEATURED ITEMS</h3>
+						
 						<div class="item">
-							<a href="ProductPage.html"><img class="imagebox" src="http://images.esellerpro.com/3194/I/156/946/156946_1.JPG"></a>
+							<img class="imagebox" src="http://images.esellerpro.com/3194/I/156/946/156946_1.JPG">
+							<div class="orangeoverlay"><h2><a class="shoe-name-link" href="ProductPage.html">Shoe Name</a></h2><p>Price: $595.00</div>
+						</div>
 
-						</div>
 						<div class="item">
-							<a href="ProductPage.html"><img class="imagebox" src="http://i.stpost.com/tricker%E2%80%99s-poe-penny-loafer-shoes-algonquian-split-toe-leather-for-men-in-black~p~4762v_04~400.2.jpg"></a>
+							<img class="imagebox" src="http://i.stpost.com/tricker%E2%80%99s-poe-penny-loafer-shoes-algonquian-split-toe-leather-for-men-in-black~p~4762v_04~400.2.jpg">
+							<div class="orangeoverlay"><h2><a class="shoe-name-link" href="ProductPage.html">Shoe Name</a></h2><p>Price: $595.00</div>
 						</div>
+
 						<div class="item">
-							<a href="ProductPage.html"><img class="imagebox imageflip" src="http://s3-eu-west-1.amazonaws.com/taafooitems/square_2fc1a6d9d91f4d3e.jpg"></a>
+							<img class="imagebox imageflip" src="http://s3-eu-west-1.amazonaws.com/taafooitems/square_2fc1a6d9d91f4d3e.jpg">
+							<div class="orangeoverlay"><h2><a class="shoe-name-link" href="ProductPage.html">Shoe Name</a></h2><p>Price: $595.00</div>
 						</div>
 					</div>
 					
@@ -137,16 +143,6 @@
 		                  }
 		          }); 
 		      });
-
-
-		//hover over featured items
-			$(".item").mouseenter(function(){
-	        		$(this).toggleClass("orangeoverlay");
-	    		});
-
-    		$(".item").mouseleave(function(){
-					$(this).toggleClass("orangeoverlay");
-				});
 		
 		//submit form footer
 			$(".offersform-submit").click(function() {
@@ -165,6 +161,15 @@
 						$("#tag").text("THANK YOU!");
 					});
 				});
+			});
+
+		//hover over featured items
+			$(".item").mouseenter(function(){
+        		$(this).children().fadeIn();
+    		});
+
+    		$(".item").mouseleave(function(){
+				$(".orangeoverlay").fadeOut();
 			});
 
 		</script>
